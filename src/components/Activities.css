@@ -1,0 +1,16 @@
+.activities {
+    padding: 2rem;
+    background: linear-gradient(to right, #E5E1DA, #B3C8CF);
+    text-align: center;
+  }
+  
+  .activities h1 {
+    color: #7C444F;
+  }
+  
+  .activities p {
+    color: #9F5255;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+  }
+  

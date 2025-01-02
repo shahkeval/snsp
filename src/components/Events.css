@@ -1,0 +1,71 @@
+.events {
+    padding: 2rem;
+    background-color: #E5E1DA;
+}
+
+.events h1 {
+    text-align: center;
+    color: #7C444F;
+    margin-bottom: 2rem;
+    font-family: 'Arial', sans-serif;
+}
+
+.event-list {
+    display: flex;
+    flex-direction: row; /* Align items in a row */
+    gap: 1.5rem; /* Space between items */
+    justify-content: center; /* Center items */
+    flex-wrap: wrap; /* Ensure responsiveness on smaller screens */
+}
+
+.event-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #F1F0E8;
+    padding: 1rem;
+    border: 1px solid #B3C8CF;
+    border-radius: 8px;
+    width: 300px; /* Fixed width for uniform size */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.event-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.event-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.event-content {
+    text-align: center;
+}
+
+.event-content h3 {
+    color: #7C444F;
+    margin-bottom: 0.5rem;
+    font-family: 'Georgia', serif;
+}
+
+.event-date {
+    color: #9F5255;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.event-description {
+    color: #4B5358;
+    font-family: 'Verdana', sans-serif;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .event-list {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+}
