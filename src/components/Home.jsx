@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "./Home.css";
-import UpcomingEvents from './UpcomingEvents';
 
 const Home = () => {
   const upcomingEvents = [
-    { id: 1, title: 'Charity Run', date: '2025-02-15' },
-    { id: 2, title: 'Food Drive', date: '2025-03-10' },
+    { id: 1, title: "Charity Run", date: "2025-02-15" },
+    { id: 2, title: "Food Drive", date: "2025-03-10" },
   ];
 
   const sliderImages = [
@@ -19,33 +18,28 @@ const Home = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % sliderImages.length);
+      setCurrentImageIndex(
+        (prevIndex) => (prevIndex + 1) % sliderImages.length
+      );
     }, 3000);
 
     return () => clearInterval(interval); // Cleanup on component unmount
   }, [sliderImages.length]);
 
   return (
-    <div className="home">
-      <header className="home-header">
-        {/* <div className="logo-section">
+    <div className="container-fluid">
+      <div className="row align-items-center mx-0">
+        <div className="col-md-4 slider-section">
           <img
-            src="logo2.jpg"
-            alt="Organization Logo"
-            className="logo"
+            src={sliderImages[currentImageIndex]}
+            alt={`Slide ${currentImageIndex + 1}`}
+            className="slider-image img-fluid"
           />
-        </div> */}
-         <section className="slider-section">
-        <img
-          src={sliderImages[currentImageIndex]}
-          alt={`Slide ${currentImageIndex + 1}`}
-          className="slider-image"
-        />
-      </section>
-        <div className="title-section">
+        </div>{" "}
+        <div className="col-md-4 title-section">
           <h1>નમો નમઃ શાશ્વત પરિવાર</h1>
         </div>
-        <div className="quick-links">
+        <div className="col-md-4 quick-links mx-3 px-5">
           <h3>Quick Links</h3>
           <ul>
             <li>Chauvihar Chhath kari Giriraj 7 Yatra</li>
@@ -58,22 +52,24 @@ const Home = () => {
             <li>& more</li>
           </ul>
         </div>
-      </header>
-
-     
-
-      <section className="events-section">
-        <h2>Upcoming Events</h2>
-        <div className="event-list">
-          {upcomingEvents.map(event => (
+      </div>
+      <div className="row mb-5">
+        <div className="col-12 text-center">
+          <h2>Upcoming Events</h2>
+        </div>
+        <div className="col-12 event-list text-center mt-3">
+          {upcomingEvents.map((event) => (
             <div key={event.id} className="event-item">
               <h3>{event.title}</h3>
               <p>Date: {event.date}</p>
             </div>
           ))}
         </div>
-        <button className="view-events-btn">View All Events</button>
-      </section>
+        <div className="col-12 text-center">
+          <button className="view-events-btn">View All Events</button>
+          
+        </div>
+      </div>
     </div>
   );
 };

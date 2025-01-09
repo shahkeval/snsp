@@ -22,6 +22,8 @@ const Contact = () => (
 
       <button type="submit">Submit</button>
     </form>
+    <iframe src="https://forms.gle/kqvDY7vPMK7EE93S6" width={"100%"} height={"400px"}/>
+
   </div>
 );
 

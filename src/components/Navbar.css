@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #F1F0E8;
+    background-color: #fff;
     border-bottom: 2px solid #B3C8CF;
   }
   
@@ -57,7 +57,7 @@
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #F1F0E8;
+    background-color: #fff;
     border: 1px solid #B3C8CF;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);

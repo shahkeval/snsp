@@ -42,7 +42,7 @@
 .contact button {
   grid-column: span 2;
   background: #7C444F;
-  color: #F1F0E8;
+  color: #fff;
   border: none;
   padding: 0.8rem;
   cursor: pointer;

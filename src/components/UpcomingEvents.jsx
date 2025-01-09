@@ -3,8 +3,8 @@ import './Events.css';
 
 const UpcomingEvents = () => {
   const upcomingEvents = [
-    { id: 1, title: 'Shatrunjay – Saat Jatra 2025', date: '16th Jan, 25', description: 'Only for males. A divine pathway from Siddhachal to Siddhashila.', image: 'palitana.png' },
-    { id: 2, title: 'Girnar Tirth Seva', date: '1st Apr, 25', description: 'Booking for 1st April, 2025 to 30th June, 2025.', image: 'girnar.png' },  ];
+    { id: 1, title: 'ShatrunjayGiri – Seva (2025)', date: '16th Jan, 25', description: 'Only for males. A divine pathway from Siddhachal to Siddhashila.', image: 'palitana.png' },
+      ];
 
   return (
     <div className="events">
